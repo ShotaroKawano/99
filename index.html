@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>99</title>
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>99</h1>
+  </header>
+
+  <main>
+    <div class="wrapper">
+
+      <!-- <div id="p2-hand">
+        <ul class="cards">
+          <li class="card"></li> -->
+          <!-- <li class="card reversed" data-symbol="1"><img src="img/cards/h1.png"></li>
+          <li class="card reversed" data-symbol="2"><img src="img/cards/h2.png"></li>
+          <li class="card reversed" data-symbol="3"><img src="img/cards/h3.png"></li>
+          <li class="card reversed" data-symbol="4"><img src="img/cards/h4.png"></li> -->
+        <!-- </ul>
+      </div> -->
+
+      <div id="p1-hand">
+        <ul class="cards">
+          <li class="card"></li>
+          <!-- <li class="card" data-symbol="1"><img src="img/cards/c1.png"></li>
+          <li class="card" data-symbol="2"><img src="img/cards/c2.png"></li>
+          <li class="card" data-symbol="3"><img src="img/cards/c3.png"></li>
+          <li class="card" data-symbol="4"><img src="img/cards/c4.png"></li> -->
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="total">0</div>
+    <div id="output">
+      <ul class="cards"></ul>
+    </div>
+    <button id="draw4p1">draw4p1</button>
+    <button id="draw4p2">draw4p2</button>
+    <button id="reset">reset</button>
+    <button id="p1">p1</button>
+    <button id="p2">p2</button>
+
+  </main>
+
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDc3x9uFgl7wjiR5fC3D9XV5mz71qpzYWA",
+      authDomain: "playingcards-99.firebaseapp.com",
+      databaseURL: "https://playingcards-99.firebaseio.com",
+      projectId: "playingcards-99",
+      storageBucket: "playingcards-99.appspot.com",
+      messagingSenderId: "352225229768",
+      appId: "1:352225229768:web:54ecd25ca8986c4145defd"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const ref = firebase.database().ref();
+  </script>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

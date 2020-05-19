@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import "reset";
+
+
+
+/* ========= variables ========= */
+
+
+
+/* ========= clearfix ========= */
+
+.clearfix::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+
+
+/* ========= common ========= */
+
+body {
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 96%;
+  padding: 0 2%;
+}
+
+li {
+  list-style: none;
+}
+
+/* ========= individuals ========= */
+
+header {
+  height: 8vh;
+  text-align: center;
+  line-height: 8vh;
+  border-bottom: 1px solid #000;
+}
+
+
+
+
+
+.cards {
+  display: flex;
+
+  .card {
+    width: 150px;
+    height: 208px;
+
+    img {
+      width: 100%;
+    }
+
+    &.reversed {
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 208px;
+        // border-radius: 10px;
+        // background: url(/img/cards/c1.png) center center / cover no-repeat;
+        background: url(../img/cards/backside.png) center center / cover no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+      }
+    }
+  }
+
+}
+
+
+#total {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
